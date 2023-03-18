@@ -1,0 +1,1 @@
+/* Example of minimal working code in C */
