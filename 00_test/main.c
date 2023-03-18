@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <Windows.h>
 #include <stdlib.h>
+#include <conio.h>
 
 int seconds = 0;
 int minutes = 0;
@@ -16,7 +17,7 @@ int main(void){
         Sleep(blinkPeriod);
     }
     
-    while(1){
+    while(!kbhit()){
         system("cls");
         
         if(seconds < 59){
