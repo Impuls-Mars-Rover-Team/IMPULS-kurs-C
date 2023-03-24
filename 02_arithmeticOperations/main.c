@@ -1,5 +1,5 @@
 /*
- * IMPULS kurs C
+ * IMPULS kurs C - zmienne, typy i operacje
  * Typy zmiennych i operacje matematyczne 
  * @gwitkowski2000 2023
  */

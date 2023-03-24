@@ -1,15 +1,16 @@
-//Test tablic
 /*
-    IMPULS kurs elektroniki
-    Część 1
-    Wstęp do programowania w języku C 
+ * IMPULS kurs C - tablice
+ * Typy zmiennych i operacje matematyczne 
+ * @gwitkowski2000 2023
+ */
 
-    Tablice (arrays) - służą do przechowywania wielu (najleiej powiązanych ze sobą) wartości tego samego typu
-    deklaracja tablicy:
+/*
+ * Tablice (arrays) - służą do przechowywania wielu (najleiej powiązanych ze sobą) wartości tego samego typu
+ * deklaracja tablicy:
 
-    typ nazwaTablicy[iloscElementow];
-    np:
-    int arrayTest
+ * typ nazwaTablicy[iloscElementow];
+ * np:
+ * int arrayTest
 */
 #include <stdio.h>
 

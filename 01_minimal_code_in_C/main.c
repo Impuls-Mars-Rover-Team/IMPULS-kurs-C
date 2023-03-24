@@ -1,3 +1,9 @@
+/*
+ * IMPULS kurs C - podstawowy program w C
+ * Typy zmiennych i operacje matematyczne 
+ * @gwitkowski2000 2023
+ */
+
 /* Biblioteka standardowych wejść / wyjść - zawiera funkcję printf*/
 #include <stdio.h>
 
