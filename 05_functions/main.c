@@ -34,3 +34,28 @@
  * 
  * */
 
+#include <stdio.h>
+
+int sumaDwochLiczbCalkowitych(int liczba1, int liczba2);
+void kursPisaniaFunkcjiTypuVoid(void){
+    printf("Wynik dodawania 56 i 87 to %d\r\n", sumaDwochLiczbCalkowitych(56, 87));
+}
+
+int main(void){
+/*
+    int zmienna1 = 56;
+    int zmienna2 = 87;
+
+    printf("Wynik dodawania:\t%d\r\n", sumaDwochLiczbCalkowitych(zmienna1, zmienna2));
+*/
+
+    //void
+    kursPisaniaFunkcjiTypuVoid();
+    return 0;
+}
+
+int sumaDwochLiczbCalkowitych(int liczba1, int liczba2){
+    int wynik = liczba1 + liczba2;
+
+    return wynik;
+}
