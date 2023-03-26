@@ -29,3 +29,30 @@
  *
  * */
 
+
+#include <stdio.h>
+
+int zmienna = 99;
+int *wskaznikNaZmiennaZmienna = &zmienna;
+
+int tablica[5] = {1, 2, 3, 4, 5};
+
+int main(void){
+    printf("Adres zmiennej zmienna: %p\r\n", wskaznikNaZmiennaZmienna);
+
+    printf("Zmienna zmienna na poczatku: %d\r\n", zmienna);
+    printf("Wartosc pod adresem wskazywanym przez wskaznik: %d\r\n", *wskaznikNaZmiennaZmienna);
+    *wskaznikNaZmiennaZmienna += 1;
+    printf("Wartosc pod adresem wskazywanym przez wskaznik: %d\r\n", *wskaznikNaZmiennaZmienna);
+
+    printf("Adres zmiennej pod wskaznikiem: %p\r\n", wskaznikNaZmiennaZmienna);
+    wskaznikNaZmiennaZmienna += 1;
+    printf("Adres zmiennej pod wskaznikiem: %p\r\n", wskaznikNaZmiennaZmienna);
+
+    for(int i = 0; i < 5; i++){
+        printf("%d\t", *tablica + i);
+    }
+    
+    return 0;
+}
+
