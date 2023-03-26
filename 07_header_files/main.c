@@ -1,5 +1,5 @@
 /*
- * IMPULS kurs C - pętle
+ * IMPULS kurs C
  * Pliki nagłówkowe
  * @gwitkowski2000 2023
  */

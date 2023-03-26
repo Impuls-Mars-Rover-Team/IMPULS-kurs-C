@@ -1,5 +1,5 @@
 /*
- * IMPULS kurs C - pętle
+ * IMPULS kurs C
  * Funkcje
  * @gwitkowski2000 2023
  */
