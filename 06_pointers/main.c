@@ -23,7 +23,7 @@
  * np.:
  *   *wskaznikNaInt = 123;
  * 
- * Gdzie są przydatne wskaźniki (w anszym przypadku)?
+ * Gdzie są przydatne wskaźniki (w naszym przypadku)?
  * STM32, STM8 - do zapisu zmiennych i danych w konkretnych sekcjach pamięci - np. SRAM, EEPROM, FLASH
  * 
  *
