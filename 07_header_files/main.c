@@ -10,7 +10,7 @@
             albo skompilowac z poziomu terminala: 
             - otworzyć folder z projektem w terminalu (PPM na folder z plikami, open in integrated terminal)
             - wpisać komendę: gcc -Wall main.c myNewHeaderFile.c -o main.exe
-            - żeby sprawdzić działanie programu, wpisać ' ./main.exe ' albo */
+            - żeby sprawdzić działanie programu, wpisać ' ./main.exe ' */
 
 /* Pliki nagłówkowe mogą służyć do rozbicia dużego programu na mniejsze moduły zawierające konkretne
  * funkcje i zmienne.
