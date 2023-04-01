@@ -29,3 +29,64 @@ enum nazwaWyliczenia{
 
  */
 
+
+
+
+/*
+inne mozliwe rozwiazania
+
+int poniedzialek = 1;
+int wtorek = 2;
+int sroda = 3;
+
+#define def_poniedzialek 1
+#define def_wtorek 2
+#define def_sroda 3
+
+*/
+
+
+#include <stdio.h>
+
+enum dniTygodnia{
+    poniedzialek = 1,
+    wtorek,
+    sroda,
+    czwartek,
+    piatek,
+    sobota,
+    niedziela,
+};
+
+
+char nazwyDniTygodnia[8][20] = {
+    " ",
+    "Poniedzialek",
+    "Wtorek",
+    "Sroda",
+    "Czwartek",
+    "Piatek",
+    "Sobota",
+    "Niedziela"
+};
+
+enum bool{false = 0, true};
+
+
+int main(void){
+
+    if(true){
+        printf("%d dzien tygodnia to %s\r\n", poniedzialek, nazwyDniTygodnia[poniedzialek]);
+        printf("%d dzien tygodnia to %s\r\n", wtorek, nazwyDniTygodnia[wtorek]);
+        printf("%d dzien tygodnia to %s\r\n", sroda, nazwyDniTygodnia[sroda]);
+        printf("%d dzien tygodnia to %s\r\n", czwartek, nazwyDniTygodnia[czwartek]);
+        printf("%d dzien tygodnia to %s\r\n", piatek, nazwyDniTygodnia[piatek]);
+        printf("%d dzien tygodnia to %s\r\n", sobota, nazwyDniTygodnia[sobota]);
+        printf("%d dzien tygodnia to %s\r\n", niedziela, nazwyDniTygodnia[niedziela]);
+    }
+
+
+    return 0;
+}
+
+
