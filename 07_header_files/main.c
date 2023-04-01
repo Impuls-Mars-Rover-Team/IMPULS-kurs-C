@@ -4,6 +4,14 @@
  * @gwitkowski2000 2023
  */
 
+/*
+ * @warning żeby include nowego pliku nagłówkowego zadziałało w Visual Studio Code, trzeba dodać ten plik
+            w tasks.json
+            albo skompilowac z poziomu terminala: 
+            - otworzyć folder z projektem w terminalu (PPM na folder z plikami, open in integrated terminal)
+            - wpisać komendę: gcc -Wall main.c myNewHeaderFile.c -o main.exe
+            - żeby sprawdzić działanie programu, wpisać ' ./main.exe ' albo */
+
 /* Pliki nagłówkowe mogą służyć do rozbicia dużego programu na mniejsze moduły zawierające konkretne
  * funkcje i zmienne.
  * Utworzone w ten sposób pliki mogą później zostać wykorzystane też w innych programach, 
@@ -23,3 +31,20 @@
  * 
  * 
  * */
+
+
+
+#include <stdio.h>
+#include <math.h>
+
+#include "myNewHeaderFile.h"
+//myNewHeaderFile_zmiennaGlobalna1 = 11;
+
+int main(void){
+
+    funkcjaGlobalna();
+
+
+    return 0;
+
+}
