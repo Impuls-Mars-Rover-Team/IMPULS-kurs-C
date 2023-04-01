@@ -60,3 +60,73 @@ struct osoba pracownik1 = {
   nazwaWskaznikaNaStrukture->nazwaZmiennej;
 
  */
+
+
+#include <stdio.h>
+
+
+struct osoba{
+    char imie[20];
+    char nazwisko[20];
+    int wiek;
+    float wzrostM;
+};
+
+struct osoba student1 = {
+    .imie = "Jan",
+    .nazwisko = "Kowalski",
+    .wiek = 27,
+    .wzrostM = 1.82,
+};
+
+struct osoba student2 = {
+    .imie = "Robert",
+    .nazwisko = "Molasy",
+    .wiek = 62,
+    .wzrostM = 1.76,
+};
+
+
+int zmienna = 190;
+int *wskaznikNaZmienna = &zmienna;
+
+struct osoba *wskaznikNaOsobe = &student1;
+
+int main(void){
+
+    printf("Imie: \t\t%s\r\n", student1.imie);
+    printf("Nazwisko: \t%s\r\n", student1.nazwisko);
+    printf("Wiek: \t\t%d\r\n", student1.wiek);
+    printf("Wzost: \t\t%.2fm\r\n", student1.wzrostM);
+
+    printf("12 miesiecy pozniej\r\n");
+    student1.wiek++;
+    printf("Imie: \t\t%s\r\n", student1.imie);
+    printf("Nazwisko: \t%s\r\n", student1.nazwisko);
+    printf("Wiek: \t\t%d\r\n", student1.wiek);
+    printf("Wzost: \t\t%.2fm\r\n", student1.wzrostM);
+
+    printf("Po dodaniu nowego studenta:\r\n");
+
+    printf("Imie: \t\t%s\r\n", student2.imie);
+    printf("Nazwisko: \t%s\r\n", student2.nazwisko);
+    printf("Wiek: \t\t%d\r\n", student2.wiek);
+    printf("Wzost: \t\t%.2fm\r\n", student2.wzrostM);
+
+
+
+    printf("Imie odebrane przy pomocy wskaznika: %s\r\n", wskaznikNaOsobe->imie);
+
+    printf("Wzrost studenta1: %.2fm\r\n", wskaznikNaOsobe->wzrostM);
+    wskaznikNaOsobe->wzrostM = 1.95;
+    printf("Wzrost studenta1 po zmianie wskaznikiem: %.2fm\r\n", wskaznikNaOsobe->wzrostM);
+
+
+
+    return 0;
+}
+
+
+
+
+
